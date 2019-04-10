@@ -11,7 +11,7 @@ class Post(models.Model):
         blank=True, null=True)
 
     def publish(self):
-        self.publised_date = timezone.now()
+        self.pulished_date = timezone.now()
         self.save()
 
     def __str__(self):
